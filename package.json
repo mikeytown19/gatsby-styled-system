@@ -10,11 +10,12 @@
   "license": "ISC",
   "dependencies": {
     "@emotion/core": "^10.0.28",
+    "@emotion/react": "^11.1.2",
     "@emotion/styled": "^10.0.27",
-    "emotion-theming": "^11.0.0",
     "gatsby": "^2.24.7",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "styled-system": "^5.1.5"
+    "styled-system": "^5.1.5",
+    "typeface-montserrat": "^1.1.13"
   }
 }
