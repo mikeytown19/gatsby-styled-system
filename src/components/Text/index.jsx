@@ -1,21 +1,12 @@
-import styled from '@emotion/styled'
-
+import styled from 'styled-components'
 import {
   space,
   color,
-  fontSize,
-  fontWeight,
-  lineHeight,
-  fontFamily
+  typography
 } from "styled-system";
 
-
-
 export const Text = styled.div`
+  ${typography}
   ${space}
-  ${fontSize}
-  ${fontWeight}
-  ${lineHeight}
   ${color}
-  ${fontFamily}
 `

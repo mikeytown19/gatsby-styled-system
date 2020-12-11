@@ -12,9 +12,11 @@
     "@emotion/core": "^10.0.28",
     "@emotion/react": "^11.1.2",
     "@emotion/styled": "^10.0.27",
+    "cyanea": "^1.0.4",
     "gatsby": "^2.24.7",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "styled-components": "^5.2.1",
     "styled-system": "^5.1.5",
     "typeface-montserrat": "^1.1.13"
   }

@@ -1,19 +1,17 @@
 import React from 'react'
-import { ThemeProvider as EmotionThemeProvider} from '@emotion/react'
+import { ThemeProvider} from 'styled-components'
 import 'typeface-montserrat'
 import { GlobalStyles } from './GlobalStyles'
-import {theme} from './theme'
+import theme from './theme'
 
-const ThemeProvider = ({children}) => {
-
+const CustomThemeProvider = ({children}) => {
   return (
-    <EmotionThemeProvider theme={theme}>
-      <>
+    <ThemeProvider theme={theme}>
         <GlobalStyles />
         {children}
-      </>
-    </EmotionThemeProvider>
+
+    </ThemeProvider>
   )
 }
 
-export default ThemeProvider
+export default CustomThemeProvider
