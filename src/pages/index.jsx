@@ -8,8 +8,8 @@ const index = () => {
   return (
     <Layout>
       <Box bg="teal" p={[3,4]}>
-        <Heading variant="blue12">This is the Heading!</Heading>
-        <Heading variant="teal12" fontSize={5}>This is the Heading!</Heading>
+        <Heading color="blue14">This is the Heading!</Heading>
+        <Heading color="blue10" >This is the Heading!</Heading>
 
         <Text color="blue" m={0} >
           Styled System w/ Gatsby!

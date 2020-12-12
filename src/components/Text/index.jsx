@@ -12,7 +12,7 @@ export const Text = styled.div`
   ${typography}
   ${space}
   ${color}
-  ${variant({
+  /* ${variant({
     variants: theme.variants
-  })}
+  })} */
 `

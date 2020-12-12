@@ -1,11 +1,11 @@
 import cyanea from 'cyanea'
-import {newColors, newVariants} from './utils'
+import {cyaneaColorVariants, cyaneaColors} from './utils'
 
 const colors = cyanea('tomato')
 
 export default {
-  variants: {...newVariants(colors)},
-  colors: {...newColors(colors)},
+  variants: {...cyaneaColorVariants(colors)},
+  colors: {...cyaneaColors(colors), ...cyaneaColorVariants(colors)},
   fonts: {
     body: "'Montserrat', sans-serif",
     heading: 'inherit',
