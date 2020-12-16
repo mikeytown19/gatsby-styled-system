@@ -4,7 +4,6 @@ import 'typeface-montserrat'
 import { GlobalStyles } from './GlobalStyles'
 import theme from './theme'
 
-console.log(theme)
 const CustomThemeProvider = ({children}) => {
   return (
     <ThemeProvider theme={theme}>

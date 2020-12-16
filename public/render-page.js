@@ -103,7 +103,17 @@ return /******/ (function(modules) { // webpackBootstrap
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-var plugins = []; // During bootstrap, we write requires at top of this file which looks like:
+var plugins = [{
+  plugin: __webpack_require__(/*! ./node_modules/gatsby-source-sanity/gatsby-ssr */ "./node_modules/gatsby-source-sanity/gatsby-ssr.js"),
+  options: {
+    "plugins": [],
+    "projectId": "zyi6qn4i",
+    "dataset": "production",
+    "token": "skIlEbXKPfZVe9gNXH992jQO6GL9HAUUCj9S8VgldRi6baxV8pG3PAfQjwkZNy4zRthaxbgPxRqLjm19kilHj8vqOwy8y8Lljk6UUyFU6wweo2SGXRC21uJi7akdWZXdZ66BO476FIdnwZwerrUEGMz2xD35sHkmcHAFNU6vC9ihzm7TxS2P",
+    "watchMode": true,
+    "overlayDrafts": true
+  }
+}]; // During bootstrap, we write requires at top of this file which looks like:
 // var plugins = [
 //   {
 //     plugin: require("/path/to/plugin1/gatsby-ssr.js"),
@@ -560,6 +570,50 @@ Html = Html && Html.__esModule ? Html.default : Html;
   htmlStr = "<!DOCTYPE html>" + htmlStr;
   callback(null, htmlStr);
 });
+
+/***/ }),
+
+/***/ "./node_modules/gatsby-source-sanity/gatsby-ssr.js":
+/*!*********************************************************!*\
+  !*** ./node_modules/gatsby-source-sanity/gatsby-ssr.js ***!
+  \*********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// Proxy to TypeScript-compiled output.
+// Note that unlike gatsby-node.js, we need to explicitly define the exported hooks
+// as they seem to be statically analyzed at build time.
+var ssr = __webpack_require__(/*! ./lib/gatsby-ssr */ "./node_modules/gatsby-source-sanity/lib/gatsby-ssr.js");
+
+exports.onRenderBody = ssr.onRenderBody;
+
+/***/ }),
+
+/***/ "./node_modules/gatsby-source-sanity/lib/gatsby-ssr.js":
+/*!*************************************************************!*\
+  !*** ./node_modules/gatsby-source-sanity/lib/gatsby-ssr.js ***!
+  \*************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.onRenderBody = void 0;
+
+var react_1 = __webpack_require__(/*! react */ "react");
+
+exports.onRenderBody = function (_ref, config) {
+  var setHeadComponents = _ref.setHeadComponents;
+  setHeadComponents([react_1.createElement('link', {
+    rel: 'preconnect',
+    key: 'sanity-cdn-preconnect',
+    href: 'https://cdn.sanity.io'
+  })]);
+};
 
 /***/ }),
 
